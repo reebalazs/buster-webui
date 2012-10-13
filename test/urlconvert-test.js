@@ -5,8 +5,15 @@ var M = require("../lib/urlconvert.js");
 
 buster.testCase("buster-static", {
 
-    "do something already": function () {
-        assert(true);
+    "encodeURL": {
+
+        "converts the spaces": function () {
+            assert.equals(
+                M.encodeURL('something wonderful'),
+                'something_wonderful'
+            );
+        }
+
     }
 
 });
