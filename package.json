@@ -1,0 +1,37 @@
+{
+    "name": "buster-static",
+    "version": "0.1",
+    "description": "Web UI for the Buster test framework",
+    "homepage": "",
+    //"author": ...
+    "contributors": [{
+        "name": "Martijn Faassen",
+        "email": "faassen@startifact.com",
+        "url": "http://startifact.com"
+    }, { 
+       "name": "Balazs Ree",
+        "email": "ree@greenfinity.hu",
+        "url": "http://greenfinity.hu"
+    }],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/reebalazs/buster-webui.git"
+    },
+    "main": "./lib/buster-webui",
+    "bin": {
+        "buster-webui": "./bin/buster-webui"
+    },
+    "scripts": {
+        "test": "./node_modules/buster/bin/buster-test"
+    },
+    "dependencies": {
+        "buster-core": ">=0.6.2",
+        "buster-cli": ">=0.5",
+        "buster-test": ">=0.6",
+        "ramp-resources": ">=0.4",
+        "mkdirp": "~0.3"
+    },
+    "devDependencies": {
+        "buster": "*"
+    }
+}
