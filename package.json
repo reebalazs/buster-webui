@@ -1,9 +1,8 @@
 {
-    "name": "buster-static",
-    "version": "0.1",
+    "name": "buster-webui",
+    "version": "0.1.0",
     "description": "Web UI for the Buster test framework",
     "homepage": "",
-    //"author": ...
     "contributors": [{
         "name": "Martijn Faassen",
         "email": "faassen@startifact.com",
