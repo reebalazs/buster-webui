@@ -1,2 +1,7 @@
 #!/usr/bin/env node
-require("../lib/cli").create().run(process.argv.slice(2));
+var path = require("path");
+var root = path.join(__dirname, "..", "lib", "buster");
+
+require("../lib/buster-webui.js").create(process.stdout, process.stderr, {
+    //extensions: [require(path.join(root, "framework-extension"))]
+}).run(process.argv.slice(2));
